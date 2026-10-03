@@ -1,0 +1,380 @@
+[
+  {
+    "_id": "murwr2bfrs54pm4",
+    "name": "prami",
+    "email": "prami123@gmail.com",
+    "password": "$2a$10$lJHKBsjOIZ6dkX8XndTT6uuDzwzRxSd.8HuCJyVIlIYQ4Rn/LEimq",
+    "phone": "9876543210",
+    "role": "student",
+    "skills": [
+      "Python",
+      "CSS",
+      "HTML"
+    ],
+    "availability": [
+      "Weekdays",
+      "Evenings"
+    ],
+    "preferredJobTypes": [
+      "Part-time",
+      "Internship",
+      "Remote"
+    ],
+    "preferredCategories": [
+      "Technology"
+    ],
+    "education": {
+      "degree": "b.Tech",
+      "branch": "computer science and engineering",
+      "college": "satya institute of technology and management",
+      "graduationYear": 2029
+    },
+    "location": "",
+    "expectedSalary": "9000",
+    "profileCompletion": 85,
+    "createdAt": "2026-10-03T04:44:37.371Z",
+    "updatedAt": "2026-10-03T04:45:48.331Z"
+  },
+  {
+    "_id": "mup359n8v6wrd6t",
+    "name": "kavya",
+    "email": "kavya123@gmail.com",
+    "password": "$2a$10$xX/ANrZ26SaW6pQ.YnUrauPFr0F1OZGpUedWlnM9XIRtHBRmdy2e.",
+    "phone": "7789453810",
+    "role": "student",
+    "skills": [],
+    "availability": [],
+    "preferredJobTypes": [
+      "Part-time",
+      "Internship",
+      "Remote"
+    ],
+    "preferredCategories": [
+      "Technology"
+    ],
+    "education": {
+      "degree": "",
+      "branch": "",
+      "college": "",
+      "graduationYear": null
+    },
+    "location": "",
+    "expectedSalary": "",
+    "profileCompletion": 45,
+    "createdAt": "2026-10-01T05:20:19.220Z",
+    "updatedAt": "2026-10-01T05:20:31.429Z"
+  },
+  {
+    "_id": "mup0ycnq6e66aeg",
+    "name": "swathi",
+    "email": "swathiii@gmail.com",
+    "password": "$2a$10$P5wY3P5xAnIMoTphwHJs6uk9DVTWGaUzylhjKGPWam9sNQ9R/qXnm",
+    "phone": "7893497445",
+    "role": "student",
+    "skills": [],
+    "availability": [],
+    "preferredJobTypes": [
+      "Part-time",
+      "Internship",
+      "Remote"
+    ],
+    "preferredCategories": [
+      "Technology"
+    ],
+    "education": {
+      "degree": "",
+      "branch": "",
+      "college": "",
+      "graduationYear": null
+    },
+    "location": "",
+    "expectedSalary": "",
+    "profileCompletion": 45,
+    "createdAt": "2026-10-01T04:18:57.302Z",
+    "updatedAt": "2026-10-01T04:18:57.302Z"
+  },
+  {
+    "_id": "mup0robsf3v6uzl",
+    "name": "Sai Kiran",
+    "email": "saikiranananthavarapu416@gmail.com",
+    "password": "$2a$10$qtTXww.c7etrTB8MemYqhupdrprNZg85sgPgliaT.izEawqCkHQtK",
+    "phone": "7893497445",
+    "role": "student",
+    "skills": [],
+    "availability": [],
+    "preferredJobTypes": [
+      "Part-time",
+      "Internship",
+      "Remote"
+    ],
+    "preferredCategories": [
+      "Technology"
+    ],
+    "education": {
+      "degree": "",
+      "branch": "",
+      "college": "",
+      "graduationYear": null
+    },
+    "location": "",
+    "expectedSalary": "",
+    "profileCompletion": 45,
+    "createdAt": "2026-10-01T04:13:45.832Z",
+    "updatedAt": "2026-10-01T04:13:45.832Z"
+  },
+  {
+    "_id": "muo8fg9vvct9023",
+    "name": "prami",
+    "email": "prami1@gmail.com",
+    "password": "$2a$10$tOOQPezMxsezZRmDwAnt2eQo8G.VwpKsDaIn18b7nzDJTRmdIguFC",
+    "phone": "9876543210",
+    "role": "student",
+    "skills": [
+      "SQL",
+      "MongoDB",
+      "Communication"
+    ],
+    "availability": [
+      "Weekends",
+      "Evenings"
+    ],
+    "preferredJobTypes": [
+      "Part-time",
+      "Internship",
+      "Remote"
+    ],
+    "preferredCategories": [
+      "Technology",
+      "Education",
+      "Data Entry"
+    ],
+    "education": {
+      "degree": "degree",
+      "branch": "b.sc",
+      "college": "raja",
+      "graduationYear": 2029
+    },
+    "location": "",
+    "expectedSalary": "9000",
+    "profileCompletion": 85,
+    "createdAt": "2026-09-30T15:00:26.275Z",
+    "updatedAt": "2026-09-30T15:05:45.915Z"
+  },
+  {
+    "_id": "munudab513b3qcw",
+    "name": "swathi",
+    "email": "swathi789@gmail.com",
+    "password": "$2a$10$qpIFrQb5vqQHKnUixDDsE.dds9FlSwa2Ax4kWgw5OUmRwXvZVA4H2",
+    "phone": "7893497445",
+    "role": "student",
+    "skills": [
+      "Python",
+      "HTML"
+    ],
+    "availability": [
+      "Weekdays",
+      "Evenings"
+    ],
+    "preferredJobTypes": [
+      "Part-time",
+      "Internship",
+      "Remote"
+    ],
+    "preferredCategories": [
+      "Technology",
+      "Education"
+    ],
+    "education": {
+      "degree": "b.Tech",
+      "branch": "computer science and engineering",
+      "college": "satya institute of technology and management",
+      "graduationYear": 2024
+    },
+    "location": "",
+    "expectedSalary": "8000",
+    "profileCompletion": 80,
+    "createdAt": "2026-09-30T08:26:50.609Z",
+    "updatedAt": "2026-09-30T14:06:25.721Z"
+  },
+  {
+    "_id": "munmueeh6n5rzxd",
+    "name": "swathi",
+    "email": "swathi@12gmail.com",
+    "password": "$2a$10$nCPdCYittMwOLjQH.GA60.uFRiz2lIXsi.GCy4BhB2pWopw/Z3KeS",
+    "phone": "7893497445",
+    "role": "student",
+    "skills": [
+      "Python",
+      "HTML"
+    ],
+    "availability": [
+      "Weekdays",
+      "Evenings"
+    ],
+    "preferredJobTypes": [
+      "Part-time",
+      "Internship",
+      "Remote"
+    ],
+    "preferredCategories": [
+      "Technology",
+      "Education"
+    ],
+    "education": {
+      "degree": "b.Tech",
+      "branch": "computer science and engineering",
+      "college": "satya institute of technology and management",
+      "graduationYear": 2028
+    },
+    "location": "",
+    "expectedSalary": "",
+    "profileCompletion": 80,
+    "createdAt": "2026-09-30T04:56:12.137Z",
+    "updatedAt": "2026-09-30T05:02:08.262Z"
+  },
+  {
+    "_id": "munmbcs5rt7vocn",
+    "name": "Test User",
+    "email": "testaudit@example.com",
+    "password": "$2a$10$dGJfnFI.fMuqUt.98JD0MOt5hTNa0XeM18u8iOqq.OLF6YDYs4rPS",
+    "phone": "",
+    "role": "student",
+    "skills": [],
+    "availability": [],
+    "preferredJobTypes": [
+      "Part-time",
+      "Internship",
+      "Remote"
+    ],
+    "preferredCategories": [
+      "Technology"
+    ],
+    "education": {
+      "degree": "",
+      "branch": "",
+      "college": "",
+      "graduationYear": null
+    },
+    "location": "",
+    "expectedSalary": "",
+    "profileCompletion": 40,
+    "createdAt": "2026-09-30T04:41:23.573Z",
+    "updatedAt": "2026-09-30T04:41:23.573Z"
+  },
+  {
+    "_id": "muneuptgmpmsfo0",
+    "name": "Demo Student",
+    "email": "demo@talentai.edu",
+    "password": "$2a$10$QioY1HiUtua/R1AkOC0Qi.qP4bIEx5tFVrYiYHtZF1KGFnxqhD07m",
+    "phone": "+91 98765 00001",
+    "role": "student",
+    "skills": [
+      "Python",
+      "SQL",
+      "React",
+      "JavaScript",
+      "Git"
+    ],
+    "availability": [
+      "Weekdays",
+      "Evenings",
+      "Weekends"
+    ],
+    "preferredJobTypes": [
+      "Internship",
+      "Part-time",
+      "Remote"
+    ],
+    "preferredCategories": [
+      "Technology",
+      "Research"
+    ],
+    "education": {
+      "degree": "B.Tech",
+      "branch": "Computer Science",
+      "college": "IIIT Bengaluru",
+      "graduationYear": 2027
+    },
+    "location": "Bengaluru",
+    "expectedSalary": "10000",
+    "profileCompletion": 100,
+    "createdAt": "2026-09-30T01:12:30.004Z",
+    "updatedAt": "2026-09-30T01:12:30.279Z"
+  },
+  {
+    "_id": "munegeuwdr8x3j6",
+    "name": "Priya Sharma",
+    "email": "priya.test2026@student.edu",
+    "password": "$2a$10$WvJHXVfg4D0hHD3np1iTSO2Bh18x5yVqdSt85LB0tIEaTjaKwNBqy",
+    "phone": "+91 9876500000",
+    "role": "student",
+    "skills": [
+      "Python",
+      "SQL",
+      "JavaScript",
+      "React",
+      "Git"
+    ],
+    "availability": [
+      "Weekdays",
+      "Evenings"
+    ],
+    "preferredJobTypes": [
+      "Internship",
+      "Part-time",
+      "Remote"
+    ],
+    "preferredCategories": [
+      "Technology"
+    ],
+    "education": {
+      "degree": "B.Tech",
+      "branch": "Computer Science",
+      "college": "GITAM University",
+      "graduationYear": 2027
+    },
+    "location": "Visakhapatnam",
+    "expectedSalary": "10000",
+    "profileCompletion": 100,
+    "createdAt": "2026-09-30T01:01:22.616Z",
+    "updatedAt": "2026-09-30T01:01:42.020Z"
+  },
+  {
+    "_id": "mune46vpkfp4dwk",
+    "name": "Test Student",
+    "email": "teststudent@example.com",
+    "password": "$2a$10$4vWcIpCrvfzli7EFKIrYzOUG6GCVfhHA3OgFDCg9HkGHJEYmMer/C",
+    "phone": "+91 9876543210",
+    "role": "student",
+    "skills": [
+      "Python",
+      "SQL",
+      "JavaScript",
+      "React",
+      "Git"
+    ],
+    "availability": [
+      "Weekdays",
+      "Evenings"
+    ],
+    "preferredJobTypes": [
+      "Internship",
+      "Part-time",
+      "Remote"
+    ],
+    "preferredCategories": [
+      "Technology"
+    ],
+    "education": {
+      "degree": "B.Tech",
+      "branch": "Computer Science",
+      "college": "GITAM University",
+      "graduationYear": 2027
+    },
+    "location": "Visakhapatnam",
+    "expectedSalary": "8000-12000",
+    "profileCompletion": 100,
+    "createdAt": "2026-09-30T00:51:52.405Z",
+    "updatedAt": "2026-09-30T00:52:12.805Z"
+  }
+]

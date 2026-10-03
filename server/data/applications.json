@@ -1,0 +1,110 @@
+[
+  {
+    "_id": "murw4gcnvy3ilfk",
+    "studentId": "munudab513b3qcw",
+    "jobId": "mumsvm1mway9hlb",
+    "coverMessage": "",
+    "matchScore": 58,
+    "status": "Applied",
+    "statusTimeline": [
+      {
+        "status": "Applied",
+        "date": "2026-10-03T04:27:02.471Z",
+        "note": "Application submitted successfully by student."
+      }
+    ],
+    "appliedAt": "2026-10-03T04:27:02.471Z",
+    "createdAt": "2026-10-03T04:27:02.471Z",
+    "updatedAt": "2026-10-03T04:27:02.471Z"
+  },
+  {
+    "_id": "mup189ldhofnncd",
+    "studentId": "mup0ycnq6e66aeg",
+    "jobId": "mumsvm1prmdeqyw",
+    "coverMessage": "cvcfdgf",
+    "matchScore": 38,
+    "status": "Applied",
+    "statusTimeline": [
+      {
+        "status": "Applied",
+        "date": "2026-10-01T04:26:39.889Z",
+        "note": "Application submitted successfully by student."
+      }
+    ],
+    "appliedAt": "2026-10-01T04:26:39.889Z",
+    "createdAt": "2026-10-01T04:26:39.889Z",
+    "updatedAt": "2026-10-01T04:26:39.889Z"
+  },
+  {
+    "_id": "mup0siptnry7lc1",
+    "studentId": "mup0robsf3v6uzl",
+    "jobId": "mumsvm1q8hrkpj8",
+    "coverMessage": "...gjgfg",
+    "matchScore": 38,
+    "status": "Applied",
+    "statusTimeline": [
+      {
+        "status": "Applied",
+        "date": "2026-10-01T04:14:25.217Z",
+        "note": "Application submitted successfully by student."
+      }
+    ],
+    "appliedAt": "2026-10-01T04:14:25.217Z",
+    "createdAt": "2026-10-01T04:14:25.217Z",
+    "updatedAt": "2026-10-01T04:14:25.217Z"
+  },
+  {
+    "_id": "muo6jci135t5kbw",
+    "studentId": "munudab513b3qcw",
+    "jobId": "mumsvm1q8hrkpj8",
+    "coverMessage": "",
+    "matchScore": 44,
+    "status": "Applied",
+    "statusTimeline": [
+      {
+        "status": "Applied",
+        "date": "2026-09-30T14:07:28.777Z",
+        "note": "Application submitted successfully by student."
+      }
+    ],
+    "appliedAt": "2026-09-30T14:07:28.777Z",
+    "createdAt": "2026-09-30T14:07:28.777Z",
+    "updatedAt": "2026-09-30T14:07:28.777Z"
+  },
+  {
+    "_id": "muneuqvoz2cx102",
+    "studentId": "muneuptgmpmsfo0",
+    "jobId": "mumsvm16h64sjh3",
+    "coverMessage": "Hello Hiring Manager at TechNova Solutions,\n\nI am writing to express my strong interest in the Python Intern opportunity. My academic journey at at IIIT Bengaluru and practical experience with Python, SQL, Git make me well-suited for the responsibilities outlined in your description.\n\nI am particularly drawn to this role because of TechNova Solutions's work in Technology and the flexibility to work remote. I am self-motivated, quick to learn, and ready to dedicate high-quality effort to this position.\n\nI would welcome the chance to interview and discuss my background further.\n\nSincerely,\nDemo Student",
+    "matchScore": 76,
+    "status": "Applied",
+    "statusTimeline": [
+      {
+        "status": "Applied",
+        "date": "2026-09-30T01:12:31.380Z",
+        "note": "Application submitted successfully by student."
+      }
+    ],
+    "appliedAt": "2026-09-30T01:12:31.380Z",
+    "createdAt": "2026-09-30T01:12:31.380Z",
+    "updatedAt": "2026-09-30T01:12:31.380Z"
+  },
+  {
+    "_id": "munehb90x8iq5hx",
+    "studentId": "munegeuwdr8x3j6",
+    "jobId": "mumsvm16h64sjh3",
+    "coverMessage": "Dear Hiring Team at TechNova Solutions,\n\nI am excited to apply for the Python Intern position. As a student studying B.Tech at GITAM University, I have developed hands-on skills in Python, SQL, Git which align directly with your job requirements. \n\nThis internship role matches my Weekdays & Evenings schedule, and I am eager to contribute meaningfully to TechNova Solutions's projects while expanding my professional experience.\n\nThank you for considering my application. I look forward to the opportunity to discuss how I can add value to your team.\n\nWarm regards,\nPriya Sharma",
+    "matchScore": 76,
+    "status": "Applied",
+    "statusTimeline": [
+      {
+        "status": "Applied",
+        "date": "2026-09-30T01:02:04.596Z",
+        "note": "Application submitted successfully by student."
+      }
+    ],
+    "appliedAt": "2026-09-30T01:02:04.596Z",
+    "createdAt": "2026-09-30T01:02:04.596Z",
+    "updatedAt": "2026-09-30T01:02:04.596Z"
+  }
+]

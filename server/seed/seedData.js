@@ -1,0 +1,294 @@
+const demoJobs = [
+  {
+    title: 'Python Intern',
+    company: 'TechNova Solutions',
+    description: 'TechNova is looking for an enthusiastic Python Intern to assist our data engineering team. You will write clean Python automation scripts, work with SQL databases, and integrate REST APIs for our client analytics pipeline. Flexible hours tailored for college students.',
+    category: 'Technology',
+    skills: ['Python', 'SQL', 'Git', 'REST APIs', 'Pandas'],
+    location: 'Bengaluru',
+    workMode: 'Remote',
+    jobType: 'Internship',
+    salary: '₹10,000/month',
+    salaryNumeric: 10000,
+    workingHours: '15-20 hrs/week (Flexible)',
+    duration: '3 Months',
+    responsibilities: [
+      'Write Python scripts to automate daily data extraction and processing pipelines.',
+      'Query PostgreSQL databases to prepare structured reporting datasets.',
+      'Collaborate with senior developers using Git version control and GitHub PRs.',
+      'Test and document REST API endpoints.'
+    ],
+    requirements: [
+      'Foundational understanding of Python syntax, data structures, and functions.',
+      'Basic familiarity with SQL queries and relational databases.',
+      'Knowledge of Git basics (commit, push, branch).',
+      'Currently enrolled in Computer Science, IT, or related degree program.'
+    ],
+    applicationDeadline: '2026-10-30',
+    status: 'active',
+    featured: true
+  },
+  {
+    title: 'Web Development Intern',
+    company: 'PixelCraft Digital',
+    description: 'Join PixelCraft as a part-time Web Development Intern! You will help build and polish responsive frontend user interfaces using modern React, Tailwind CSS, and JavaScript. Perfect for students wanting real-world portfolio experience.',
+    category: 'Technology',
+    skills: ['React', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'Git'],
+    location: 'Hyderabad',
+    workMode: 'Remote',
+    jobType: 'Internship',
+    salary: '₹12,000/month',
+    salaryNumeric: 12000,
+    workingHours: '15 hrs/week (Weekends / Evenings)',
+    duration: '6 Months',
+    responsibilities: [
+      'Develop reusable UI components using React and Tailwind CSS.',
+      'Ensure high visual fidelity across mobile, tablet, and desktop viewports.',
+      'Fix UI bugs and improve website performance and responsiveness.',
+      'Participate in weekly sprint sync meetings.'
+    ],
+    requirements: [
+      'Proficiency in JavaScript (ES6+), HTML5, and CSS3.',
+      'Hands-on experience building at least one project with React.',
+      'Attention to detail in UI/UX aesthetics and typography.',
+      'Good communication skills.'
+    ],
+    applicationDeadline: '2026-11-05',
+    status: 'active',
+    featured: true
+  },
+  {
+    title: 'Data Entry Assistant',
+    company: 'LogiGlobal Logistics',
+    description: 'LogiGlobal requires a meticulous part-time Data Entry Assistant to verify shipment logs, update customer databases, and maintain spreadsheets. Straightforward work with flexible evening shifts.',
+    category: 'Data Entry',
+    skills: ['MS Excel', 'Data Entry', 'Attention to Detail', 'Typing', 'Google Sheets'],
+    location: 'Visakhapatnam',
+    workMode: 'Remote',
+    jobType: 'Part-time',
+    salary: '₹7,500/month',
+    salaryNumeric: 7500,
+    workingHours: '12 hrs/week',
+    duration: 'Ongoing',
+    responsibilities: [
+      'Enter and verify shipping and vendor records in Google Sheets and Excel.',
+      'Audit existing data records to identify duplicates and missing fields.',
+      'Maintain confidentiality of sensitive customer records.',
+      'Submit weekly summary reports.'
+    ],
+    requirements: [
+      'Proficiency with MS Excel and Google Sheets (VLOOKUP, formulas).',
+      'Accurate typing speed (35+ WPM).',
+      'Strong attention to detail and ability to spot inconsistencies.',
+      'Reliable computer and internet connection.'
+    ],
+    applicationDeadline: '2026-10-25',
+    status: 'active',
+    featured: false
+  },
+  {
+    title: 'Online Math & Science Tutor',
+    company: 'EduSpark Academy',
+    description: 'EduSpark is seeking college students with strong quantitative foundations to tutor middle and high school students in Mathematics and Science through 1-on-1 virtual sessions. Great pay and choose your own hours.',
+    category: 'Education',
+    skills: ['Mathematics', 'Communication', 'Online Teaching', 'Science', 'Patience'],
+    location: 'Delhi NCR',
+    workMode: 'Remote',
+    jobType: 'Part-time',
+    salary: '₹14,000/month',
+    salaryNumeric: 14000,
+    workingHours: '10-14 hrs/week (Evenings & Weekends)',
+    duration: '6 Months',
+    responsibilities: [
+      'Conduct engaging 45-minute virtual tutoring sessions in Math and Physics.',
+      'Explain complex formulas and problem-solving techniques simply.',
+      'Provide homework assistance and weekly student progress feedback.',
+      'Create small practice quizzes.'
+    ],
+    requirements: [
+      'Pursuing or completed degree in Engineering, Sciences, or Mathematics.',
+      'Fluent verbal communication in English.',
+      'Patient and empathetic teaching demeanor.',
+      'Quiet workspace with webcam and reliable broadband.'
+    ],
+    applicationDeadline: '2026-11-15',
+    status: 'active',
+    featured: true
+  },
+  {
+    title: 'Content Writer',
+    company: 'InboundMedia Labs',
+    description: 'Love writing? InboundMedia needs a creative student Content Writer to draft informative blog articles, product guides, and social media micro-copy around tech and student lifestyle topics.',
+    category: 'Content',
+    skills: ['Content Writing', 'SEO', 'Creative Writing', 'English', 'Research'],
+    location: 'Mumbai',
+    workMode: 'Remote',
+    jobType: 'Freelance',
+    salary: '₹8,500/month',
+    salaryNumeric: 8500,
+    workingHours: '10-12 hrs/week',
+    duration: '3 Months',
+    responsibilities: [
+      'Write 2-3 engaging, original 800-word blog posts per week.',
+      'Conduct research on trending student careers, skills, and tools.',
+      'Incorporate basic on-page SEO keywords naturally.',
+      'Proofread and edit copy based on editor feedback.'
+    ],
+    requirements: [
+      'Excellent written English grammar and vocabulary.',
+      'Ability to research topics and synthesize information quickly.',
+      'Basic understanding of SEO principles is a plus.',
+      'Writing sample or portfolio link.'
+    ],
+    applicationDeadline: '2026-10-28',
+    status: 'active',
+    featured: false
+  },
+  {
+    title: 'Digital Marketing Assistant',
+    company: 'GrowthForge Agency',
+    description: 'Fast-growing digital agency looking for a Digital Marketing Assistant to assist with social media campaigns, newsletter setup, and ad performance tracking.',
+    category: 'Marketing',
+    skills: ['Social Media Marketing', 'SEO', 'Canva', 'Email Marketing', 'Analytics'],
+    location: 'Pune',
+    workMode: 'Hybrid',
+    jobType: 'Part-time',
+    salary: '₹9,000/month',
+    salaryNumeric: 9000,
+    workingHours: '15 hrs/week',
+    duration: '4 Months',
+    responsibilities: [
+      'Schedule daily posts across LinkedIn, Instagram, and Twitter.',
+      'Track engagement metrics (reach, clicks, conversions) in Google Analytics.',
+      'Draft promotional email drafts using Mailchimp templates.',
+      'Conduct competitor social media audits.'
+    ],
+    requirements: [
+      'Active interest in social media marketing and brand growth.',
+      'Familiarity with Canva and modern social platforms.',
+      'Analytical mindset and comfort with spreadsheets.',
+      'BBA, B.Com, or Mass Media students preferred.'
+    ],
+    applicationDeadline: '2026-11-10',
+    status: 'active',
+    featured: true
+  },
+  {
+    title: 'Customer Support Assistant',
+    company: 'SwiftDesk Services',
+    description: 'SwiftDesk is hiring part-time Customer Support Assistants to assist customers via live chat and email ticketing. Weekend shifts available with comprehensive initial training provided.',
+    category: 'Customer Support',
+    skills: ['Customer Support', 'Communication', 'Problem Solving', 'Live Chat', 'MS Office'],
+    location: 'Chennai',
+    workMode: 'Remote',
+    jobType: 'Weekend',
+    salary: '₹8,000/month',
+    salaryNumeric: 8000,
+    workingHours: '16 hrs/week (Saturdays & Sundays)',
+    duration: 'Ongoing',
+    responsibilities: [
+      'Respond promptly and courteously to customer chat and email queries.',
+      'Troubleshoot common user account, billing, and access issues.',
+      'Escalate complex technical inquiries to senior support engineers.',
+      'Log customer feedback into our ticketing software.'
+    ],
+    requirements: [
+      'Polite, friendly, and professional written English.',
+      'Strong problem-solving capability and calm demeanor.',
+      'Ability to commit to weekend coverage.',
+      'Prior customer service experience is helpful but not required.'
+    ],
+    applicationDeadline: '2026-11-01',
+    status: 'active',
+    featured: false
+  },
+  {
+    title: 'Graphic Design Intern',
+    company: 'VisualVibe Creative',
+    description: 'Create eye-catching banners, social media creatives, and marketing illustrations. VisualVibe helps consumer startups build striking visual identities.',
+    category: 'Design',
+    skills: ['Figma', 'Photoshop', 'Canva', 'Illustrator', 'UI Design'],
+    location: 'Bengaluru',
+    workMode: 'Remote',
+    jobType: 'Internship',
+    salary: '₹11,000/month',
+    salaryNumeric: 11000,
+    workingHours: '15 hrs/week',
+    duration: '3 Months',
+    responsibilities: [
+      'Design social media carousels, ad creatives, and promotional banners.',
+      'Assist in crafting website hero mockups and vector icons in Figma.',
+      'Ensure brand visual guidelines and color palettes are respected.',
+      'Incorporate feedback and iterate designs quickly.'
+    ],
+    requirements: [
+      'Proficiency in Figma, Adobe Photoshop, or Illustrator.',
+      'Strong sense of typography, hierarchy, and color theory.',
+      'Portfolio showing 3-5 sample design works.',
+      'Self-driven with good time management.'
+    ],
+    applicationDeadline: '2026-11-12',
+    status: 'active',
+    featured: true
+  },
+  {
+    title: 'Research Assistant (AI & Data)',
+    company: 'Apex Research Labs',
+    description: 'Opportunity to assist senior academic researchers in collecting data, annotating datasets, and reviewing recent academic literature on Artificial Intelligence and Machine Learning applications.',
+    category: 'Research',
+    skills: ['Python', 'Research', 'Data Analysis', 'Literature Review', 'Academic Writing'],
+    location: 'Hyderabad',
+    workMode: 'Hybrid',
+    jobType: 'Part-time',
+    salary: '₹15,000/month',
+    salaryNumeric: 15000,
+    workingHours: '15-20 hrs/week',
+    duration: '6 Months',
+    responsibilities: [
+      'Perform literature reviews on state-of-the-art AI benchmarking studies.',
+      'Curate and clean open-source datasets using Python.',
+      'Prepare summary tables and visual graphs for academic conference submissions.',
+      'Maintain experimental logs and code notebooks.'
+    ],
+    requirements: [
+      'Undergraduate or postgraduate student in Engineering, Math, or Computer Science.',
+      'Solid command of Python and basic data libraries.',
+      'Demonstrated passion for academic or applied research.',
+      'High academic standing (CGPA 7.5+ preferred).'
+    ],
+    applicationDeadline: '2026-11-20',
+    status: 'active',
+    featured: true
+  },
+  {
+    title: 'Social Media Assistant',
+    company: 'CampusBuzz Media',
+    description: 'CampusBuzz is the leading media outlet for university students in India. We need a vibrant Social Media Assistant to curate campus memes, student spotlights, and event reels.',
+    category: 'Marketing',
+    skills: ['Instagram Reels', 'Video Editing', 'Social Media Marketing', 'Copywriting', 'Trends'],
+    location: 'Visakhapatnam',
+    workMode: 'Remote',
+    jobType: 'Part-time',
+    salary: '₹6,500/month',
+    salaryNumeric: 6500,
+    workingHours: '10 hrs/week',
+    duration: 'Ongoing',
+    responsibilities: [
+      'Edit short-form video reels using CapCut or Premiere.',
+      'Monitor viral college and student lifestyle trends.',
+      'Engage with student followers in comments and direct messages.',
+      'Participate in bi-weekly creative brainstorming calls.'
+    ],
+    requirements: [
+      'Active social media user with an ear to college trends.',
+      'Basic video editing skills on mobile or desktop.',
+      'High energy, creative, and enthusiastic attitude.',
+      'College student passionate about storytelling.'
+    ],
+    applicationDeadline: '2026-10-31',
+    status: 'active',
+    featured: false
+  }
+];
+
+module.exports = demoJobs;
