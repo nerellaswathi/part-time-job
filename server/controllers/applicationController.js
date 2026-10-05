@@ -57,12 +57,15 @@ exports.applyForJob = async (req, res) => {
       link: '/applications'
     });
 
+    const appObj = newApp.toObject ? newApp.toObject() : newApp;
+    const jobObj = job.toObject ? job.toObject() : job;
+
     res.status(201).json({
       success: true,
       message: `Application submitted successfully for ${job.title}!`,
       application: {
-        ...newApp,
-        job
+        ...appObj,
+        job: jobObj
       }
     });
   } catch (error) {
@@ -83,17 +86,16 @@ exports.getMyApplications = async (req, res) => {
     // Populate job details
     const populated = await Promise.all(applications.map(async (app) => {
       const job = await Job.findById(app.jobId);
-      return {
-        ...app,
-        job: job || {
-          title: 'Position (Archive)',
-          company: 'Partner Enterprise',
-          location: 'Remote',
-          workMode: 'Remote',
-          salary: '₹10,000/month',
-          jobType: 'Part-time'
-        }
+      const appObj = app.toObject ? app.toObject() : app;
+      const jobObj = job ? (job.toObject ? job.toObject() : job) : {
+        title: 'Position (Archive)',
+        company: 'Partner Enterprise',
+        location: 'Remote',
+        workMode: 'Remote',
+        salary: '₹10,000/month',
+        jobType: 'Part-time'
       };
+      return { ...appObj, job: jobObj };
     }));
 
     // Sort by latest applied
@@ -128,12 +130,12 @@ exports.getApplicationById = async (req, res) => {
 
     const job = await Job.findById(app.jobId);
 
+    const appObj = app.toObject ? app.toObject() : app;
+    const jobObj = job ? (job.toObject ? job.toObject() : job) : null;
+
     res.status(200).json({
       success: true,
-      application: {
-        ...app,
-        job
-      }
+      application: { ...appObj, job: jobObj }
     });
   } catch (error) {
     console.error('[Get Application By Id Error]:', error);
@@ -183,10 +185,12 @@ exports.simulateStatusAdvance = async (req, res) => {
       link: '/applications'
     });
 
+    const updatedObj = updated.toObject ? updated.toObject() : updated;
+
     res.status(200).json({
       success: true,
       message: `Status updated to ${status}`,
-      application: updated
+      application: updatedObj
     });
   } catch (error) {
     console.error('[Simulate Status Advance Error]:', error);

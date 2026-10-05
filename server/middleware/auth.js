@@ -23,7 +23,7 @@ async function authenticateToken(req, res, next) {
         return res.status(404).json({ success: false, message: 'User account not found.' });
       }
 
-      req.user = user;
+      req.user = user.toObject();
       next();
     });
   } catch (error) {

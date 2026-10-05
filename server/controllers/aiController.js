@@ -38,15 +38,16 @@ exports.getRecommendations = async (req, res) => {
     const appliedSet = new Set(studentApps.map(a => String(a.jobId)));
 
     const scoredJobs = allJobs.map(job => {
-      const match = calculateMatch(student, job);
+      const jobObj = job.toObject ? job.toObject() : job;
+      const match = calculateMatch(student, jobObj);
       return {
-        ...job,
+        ...jobObj,
         aiMatchScore: match.score,
         aiReasons: match.reasons,
         breakdown: match.breakdown,
         matchedSkills: match.matchedSkills,
         missingSkills: match.missingSkills,
-        alreadyApplied: appliedSet.has(String(job._id))
+        alreadyApplied: appliedSet.has(String(jobObj._id))
       };
     });
 

@@ -10,8 +10,8 @@ exports.getProfile = async (req, res) => {
       return res.status(404).json({ success: false, message: 'User not found.' });
     }
 
-    const analysis = analyzeProfile(user);
-    const userSafe = { ...user };
+    const analysis = analyzeProfile(user.toObject());
+    const userSafe = user.toObject();
     delete userSafe.password;
 
     res.status(200).json({
@@ -91,7 +91,7 @@ exports.updateProfile = async (req, res) => {
       });
     }
 
-    const userSafe = { ...updatedUser };
+    const userSafe = updatedUser.toObject();
     delete userSafe.password;
 
     res.status(200).json({

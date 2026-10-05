@@ -44,7 +44,7 @@ export default function DashboardPage() {
       }
     }
     loadDashboardData();
-  }, []);
+  }, [user?.skills, user?.availability, user?.preferredCategories, user?.preferredJobTypes]);
 
   const completionPct = user?.profileCompletion || 30;
 

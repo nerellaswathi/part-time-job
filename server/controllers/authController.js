@@ -76,7 +76,7 @@ exports.register = async (req, res) => {
     });
 
     const token = generateToken(newUser);
-    const userSafe = { ...newUser };
+    const userSafe = newUser.toObject();
     delete userSafe.password;
 
     res.status(201).json({
@@ -112,7 +112,7 @@ exports.login = async (req, res) => {
     }
 
     const token = generateToken(user);
-    const userSafe = { ...user };
+    const userSafe = user.toObject();
     delete userSafe.password;
 
     res.status(200).json({

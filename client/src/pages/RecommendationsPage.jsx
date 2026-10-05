@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import { api } from '../services/api';
 import JobCard from '../components/common/JobCard';
 import {
@@ -13,6 +14,7 @@ import {
 } from 'lucide-react';
 
 export default function RecommendationsPage() {
+  const { user } = useAuth();
   const [recommendations, setRecommendations] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -31,7 +33,7 @@ export default function RecommendationsPage() {
       }
     }
     fetchRecs();
-  }, []);
+  }, [user?.skills, user?.availability, user?.preferredCategories, user?.preferredJobTypes]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">

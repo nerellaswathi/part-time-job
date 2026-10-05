@@ -70,14 +70,15 @@ exports.getJobs = async (req, res) => {
     }
 
     const enhancedJobs = jobs.map(job => {
-      const match = student ? calculateMatch(student, job) : { score: 75, reasons: ['Log in to see your personalized AI match score!'], matchedSkills: [], missingSkills: [] };
+      const jobObj = job.toObject ? job.toObject() : job;
+      const match = student ? calculateMatch(student, jobObj) : { score: 75, reasons: ['Log in to see your personalized AI match score!'], matchedSkills: [], missingSkills: [] };
       return {
-        ...job,
+        ...jobObj,
         aiMatchScore: match.score,
         aiReasons: match.reasons,
         matchedSkills: match.matchedSkills,
         missingSkills: match.missingSkills,
-        alreadyApplied: appliedJobIds.has(String(job._id))
+        alreadyApplied: appliedJobIds.has(String(jobObj._id))
       };
     });
 
@@ -116,26 +117,27 @@ exports.getJobById = async (req, res) => {
     }
 
     const student = req.user || null;
+    const jobObj = job.toObject ? job.toObject() : job;
     let match = {
       score: 75,
       breakdown: { skill: 35, location: 15, availability: 15, jobType: 10, education: 0 },
       matchedSkills: [],
-      missingSkills: job.skills || [],
+      missingSkills: jobObj.skills || [],
       reasons: ['Sign in and complete your profile to unlock custom AI compatibility insights.']
     };
 
     let existingApplication = null;
     if (student) {
-      match = calculateMatch(student, job);
+      match = calculateMatch(student, jobObj);
       const Application = getModel('Application');
       const apps = await Application.find({ studentId: student._id });
-      existingApplication = apps.find(a => String(a.jobId) === String(job._id)) || null;
+      existingApplication = apps.find(a => String(a.jobId) === String(jobObj._id)) || null;
     }
 
     res.status(200).json({
       success: true,
       job: {
-        ...job,
+        ...jobObj,
         aiMatch: match,
         alreadyApplied: !!existingApplication,
         applicationStatus: existingApplication ? existingApplication.status : null,
