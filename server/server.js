@@ -23,24 +23,20 @@ const PORT = process.env.PORT || 5000;
 // CORS
 // ======================================================
 
-const allowedOrigins = [
-  'http://localhost:5173',
-  'http://localhost:3000',
-
-  // Replace this with your actual Vercel frontend URL
-  'https://YOUR-VERCEL-APP.vercel.app'
-];
-
 app.use(cors({
   origin: function (origin, callback) {
-    // Allow requests without an origin
-    if (!origin) {
-      return callback(null, true);
-    }
+    // Allow requests with no origin (mobile apps, curl, server-to-server)
+    if (!origin) return callback(null, true);
 
-    if (allowedOrigins.includes(origin)) {
-      return callback(null, true);
-    }
+    // Allow localhost dev origins
+    if (origin.startsWith('http://localhost')) return callback(null, true);
+
+    // Allow any Vercel deployment of this project
+    if (origin.endsWith('.vercel.app')) return callback(null, true);
+
+    // Allow the production custom domain if set
+    const productionDomain = process.env.CLIENT_URL;
+    if (productionDomain && origin === productionDomain) return callback(null, true);
 
     return callback(new Error('Not allowed by CORS'));
   },
@@ -95,10 +91,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-// ======================================================
-// SERVE REACT FRONTEND IF DIST EXISTS
-// ======================================================
-
+// Serve React frontend only when running locally (not on Vercel)
 const clientDistPath = path.join(
   __dirname,
   '..',
@@ -106,7 +99,7 @@ const clientDistPath = path.join(
   'dist'
 );
 
-if (fs.existsSync(clientDistPath)) {
+if (fs.existsSync(clientDistPath) && process.env.NODE_ENV !== 'production') {
   app.use(express.static(clientDistPath));
 
   // SPA fallback
